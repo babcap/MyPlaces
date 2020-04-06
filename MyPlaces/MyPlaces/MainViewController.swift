@@ -44,6 +44,19 @@ class MainViewController: UITableViewController {
         return cell
     }
 
+    // MARK: - Table View Delegate
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let place = places[indexPath.row]
+        
+        let DeleteAction = UIContextualAction(style: .destructive, title: "Delete", handler: { (_, _, _)  in
+            
+            StorageManager.deleteObject(place)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        })
+        DeleteAction.backgroundColor = .red
+        return UISwipeActionsConfiguration(actions: [DeleteAction])
+    }
    
     /*
     // MARK: - Navigation
