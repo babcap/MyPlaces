@@ -27,7 +27,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="2oA-80-Vks">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="250.00000000000006"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -151,7 +151,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jSN-S3-MRb" customClass="RatingControl" customModule="MyPlaces" customModuleProvider="target">
+                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="252" placeholderIntrinsicHeight="44" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jSN-S3-MRb" customClass="RatingControl" customModule="MyPlaces" customModuleProvider="target">
                                                     <rect key="frame" x="81" y="48" width="252" height="44"/>
                                                 </stackView>
                                             </subviews>
@@ -235,7 +235,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q3l-x5-WOT">
-                                <rect key="frame" x="0.0" y="120" width="414" height="742"/>
+                                <rect key="frame" x="0.0" y="120" width="414" height="776"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="tjo-LR-7CE" customClass="CustomTableViewCell" customModule="MyPlaces" customModuleProvider="target">
@@ -305,7 +305,7 @@
                             <constraint firstItem="Q3l-x5-WOT" firstAttribute="trailing" secondItem="dXx-yH-Y9v" secondAttribute="trailing" id="UWK-6Y-Bud"/>
                             <constraint firstItem="Q3l-x5-WOT" firstAttribute="leading" secondItem="dXx-yH-Y9v" secondAttribute="leading" id="Ya3-6m-aJy"/>
                             <constraint firstItem="OR1-d7-osG" firstAttribute="top" secondItem="dXx-yH-Y9v" secondAttribute="top" id="YdT-I2-oSG"/>
-                            <constraint firstItem="Q3l-x5-WOT" firstAttribute="bottom" secondItem="dXx-yH-Y9v" secondAttribute="bottom" id="Zb9-E5-3Kh"/>
+                            <constraint firstItem="Q3l-x5-WOT" firstAttribute="bottom" secondItem="9uk-ey-Lp1" secondAttribute="bottom" id="Zb9-E5-3Kh"/>
                             <constraint firstItem="Q3l-x5-WOT" firstAttribute="top" secondItem="OR1-d7-osG" secondAttribute="bottom" constant="1" id="iOx-ps-bJB"/>
                             <constraint firstItem="OR1-d7-osG" firstAttribute="leading" secondItem="dXx-yH-Y9v" secondAttribute="leading" id="nHr-vc-C0q"/>
                             <constraint firstItem="OR1-d7-osG" firstAttribute="trailing" secondItem="dXx-yH-Y9v" secondAttribute="trailing" id="vDi-2w-24w"/>

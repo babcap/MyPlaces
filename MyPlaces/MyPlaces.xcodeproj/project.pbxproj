@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D253115243CA79D0001926F /* Pods_MyPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4040BDE3AA4FF2B07ABE44EE /* Pods_MyPlaces.framework */; };
+		8D253116243CA79D0001926F /* Pods_MyPlaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4040BDE3AA4FF2B07ABE44EE /* Pods_MyPlaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D3C700F2435CEDE005372D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C700E2435CEDE005372D1 /* AppDelegate.swift */; };
 		8D3C70112435CEDE005372D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C70102435CEDE005372D1 /* SceneDelegate.swift */; };
 		8D3C70162435CEDE005372D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3C70142435CEDE005372D1 /* Main.storyboard */; };
@@ -18,8 +20,21 @@
 		8D80086F243B42D80044704F /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D80086E243B42D80044704F /* StorageManager.swift */; };
 		8DA76A62243C98AC00FE793A /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA76A61243C98AB00FE793A /* RatingControl.swift */; };
 		8DBEE4E724387916008487BD /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBEE4E624387916008487BD /* NewPlaceViewController.swift */; };
-		F5AE8B3EA7E210C0352102A3 /* Pods_MyPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4040BDE3AA4FF2B07ABE44EE /* Pods_MyPlaces.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8D253117243CA79D0001926F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8D253116243CA79D0001926F /* Pods_MyPlaces.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4040BDE3AA4FF2B07ABE44EE /* Pods_MyPlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5AE8B3EA7E210C0352102A3 /* Pods_MyPlaces.framework in Frameworks */,
+				8D253115243CA79D0001926F /* Pods_MyPlaces.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +133,7 @@
 				8D3C70082435CEDE005372D1 /* Frameworks */,
 				8D3C70092435CEDE005372D1 /* Resources */,
 				7A165375468A177B8CE4EA6C /* [CP] Embed Pods Frameworks */,
+				8D253117243CA79D0001926F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
