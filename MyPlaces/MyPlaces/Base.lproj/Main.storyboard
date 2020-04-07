@@ -27,7 +27,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="2oA-80-Vks">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250.00000000000006"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -213,6 +213,9 @@
                                     <segment title="Date"/>
                                     <segment title="Name"/>
                                 </segments>
+                                <connections>
+                                    <action selector="sortSelection:" destination="OY7-Xh-Egj" eventType="valueChanged" id="RHw-kv-FU1"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q3l-x5-WOT">
                                 <rect key="frame" x="0.0" y="76" width="375" height="591"/>
@@ -293,7 +296,11 @@
                         <viewLayoutGuide key="safeArea" id="dXx-yH-Y9v"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Places" largeTitleDisplayMode="never" id="fJS-t2-apn">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="AZ" id="Jfo-ER-H0q"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="AZ" id="Jfo-ER-H0q">
+                            <connections>
+                                <action selector="reversedSorting:" destination="OY7-Xh-Egj" id="RuD-qk-Peh"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Vnq-op-7pv">
                             <connections>
                                 <segue destination="alC-l2-MBW" kind="presentation" id="19I-40-hKp"/>
@@ -301,6 +308,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="reversedSortingButton" destination="Jfo-ER-H0q" id="tlH-xU-vbn"/>
+                        <outlet property="segmentedControl" destination="OR1-d7-osG" id="UuF-IT-bdm"/>
                         <outlet property="tableView" destination="Q3l-x5-WOT" id="xfy-7k-QQn"/>
                     </connections>
                 </viewController>
