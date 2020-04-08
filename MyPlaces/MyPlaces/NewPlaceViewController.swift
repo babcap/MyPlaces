@@ -121,7 +121,7 @@ class NewPlaceViewController: UITableViewController {
             placeLocation.text = currentPlace?.location
             placeType.text = currentPlace?.type
             ratingControl.rating = Int(currentPlace.rating)
-        }
+         }
     }
     
     private func setupNavigationBar() {
