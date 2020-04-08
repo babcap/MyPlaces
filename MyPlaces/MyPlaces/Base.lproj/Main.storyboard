@@ -233,13 +233,26 @@
                                     <action selector="closeVC" destination="TZp-O0-3XH" eventType="touchUpInside" id="hJF-eg-Euy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mee-da-3DS">
+                                <rect key="frame" x="324" y="772" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="6cj-rA-ITp"/>
+                                    <constraint firstAttribute="height" constant="50" id="kuI-v5-J0e"/>
+                                </constraints>
+                                <state key="normal" image="Location"/>
+                                <connections>
+                                    <action selector="centerViewInUserLocation" destination="TZp-O0-3XH" eventType="touchUpInside" id="18s-Wf-U4w"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="CRL-HW-At4" firstAttribute="leading" secondItem="72N-v4-OpT" secondAttribute="leading" id="LQ5-rg-434"/>
+                            <constraint firstItem="AMN-hF-hVF" firstAttribute="trailing" secondItem="mee-da-3DS" secondAttribute="trailing" constant="40" id="NHq-UX-TH2"/>
                             <constraint firstItem="AMN-hF-hVF" firstAttribute="trailing" secondItem="8jR-PU-D8y" secondAttribute="trailing" constant="40" id="QOG-Ek-f47"/>
                             <constraint firstAttribute="bottom" secondItem="CRL-HW-At4" secondAttribute="bottom" id="Vwo-cI-UNi"/>
                             <constraint firstItem="CRL-HW-At4" firstAttribute="trailing" secondItem="72N-v4-OpT" secondAttribute="trailing" id="WJi-2w-6hn"/>
+                            <constraint firstItem="AMN-hF-hVF" firstAttribute="bottom" secondItem="mee-da-3DS" secondAttribute="bottom" constant="40" id="fMU-41-x06"/>
                             <constraint firstItem="CRL-HW-At4" firstAttribute="top" secondItem="72N-v4-OpT" secondAttribute="top" id="vCF-jh-U2z"/>
                             <constraint firstItem="8jR-PU-D8y" firstAttribute="top" secondItem="AMN-hF-hVF" secondAttribute="top" constant="40" id="z60-1u-Xat"/>
                         </constraints>
@@ -431,6 +444,7 @@
     </scenes>
     <resources>
         <image name="AZ" width="25" height="24"/>
+        <image name="Location" width="128" height="128"/>
         <image name="Photo" width="195" height="196"/>
         <image name="camcel" width="128" height="128"/>
         <image name="emptyStar" width="255" height="256"/>
