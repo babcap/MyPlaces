@@ -100,11 +100,19 @@
 				8D3C70142435CEDE005372D1 /* Main.storyboard */,
 				8DC3DC58243DBAE800F9920B /* MapViewController.swift */,
 				8DBEE4E624387916008487BD /* NewPlaceViewController.swift */,
+				8DCCDB4A243F0ADE0008B2BC /* New Group */,
 				8D3C70172435CEDF005372D1 /* Assets.xcassets */,
 				8D3C70192435CEDF005372D1 /* LaunchScreen.storyboard */,
 				8D3C701C2435CEDF005372D1 /* Info.plist */,
 			);
 			path = MyPlaces;
+			sourceTree = "<group>";
+		};
+		8DCCDB4A243F0ADE0008B2BC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		A2E9671B0BA184F5D91CDAD2 /* Frameworks */ = {
