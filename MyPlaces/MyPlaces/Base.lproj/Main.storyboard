@@ -280,9 +280,21 @@
                                     <action selector="centerViewInUserLocation" destination="TZp-O0-3XH" eventType="touchUpInside" id="18s-Wf-U4w"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4E-ad-gjH">
+                                <rect key="frame" x="182" y="772" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="lRl-Fn-rrv"/>
+                                    <constraint firstAttribute="height" constant="50" id="mz0-lp-PMf"/>
+                                </constraints>
+                                <state key="normal" image="GetDirection"/>
+                                <connections>
+                                    <action selector="goButtonPressed" destination="TZp-O0-3XH" eventType="touchUpInside" id="a20-Tg-xGw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="z4E-ad-gjH" firstAttribute="centerX" secondItem="72N-v4-OpT" secondAttribute="centerX" id="0do-vW-Wgz"/>
                             <constraint firstItem="CRL-HW-At4" firstAttribute="top" secondItem="3PJ-Cn-qzm" secondAttribute="bottom" constant="-269" id="5Eo-Hf-OWp"/>
                             <constraint firstItem="qf6-wr-kkQ" firstAttribute="centerX" secondItem="72N-v4-OpT" secondAttribute="centerX" id="JCN-qe-LKd"/>
                             <constraint firstItem="CRL-HW-At4" firstAttribute="leading" secondItem="72N-v4-OpT" secondAttribute="leading" id="LQ5-rg-434"/>
@@ -290,6 +302,7 @@
                             <constraint firstItem="AMN-hF-hVF" firstAttribute="trailing" secondItem="8jR-PU-D8y" secondAttribute="trailing" constant="40" id="QOG-Ek-f47"/>
                             <constraint firstAttribute="bottom" secondItem="CRL-HW-At4" secondAttribute="bottom" id="Vwo-cI-UNi"/>
                             <constraint firstItem="CRL-HW-At4" firstAttribute="trailing" secondItem="72N-v4-OpT" secondAttribute="trailing" id="WJi-2w-6hn"/>
+                            <constraint firstItem="AMN-hF-hVF" firstAttribute="bottom" secondItem="z4E-ad-gjH" secondAttribute="bottom" constant="40" id="YFc-gU-hQO"/>
                             <constraint firstItem="QkA-iQ-oCO" firstAttribute="centerX" secondItem="72N-v4-OpT" secondAttribute="centerX" id="YJZ-bs-XB2"/>
                             <constraint firstItem="AMN-hF-hVF" firstAttribute="trailing" secondItem="3PJ-Cn-qzm" secondAttribute="trailing" constant="16" id="Za1-pB-X1T"/>
                             <constraint firstItem="AMN-hF-hVF" firstAttribute="bottom" secondItem="qf6-wr-kkQ" secondAttribute="bottom" constant="40" id="ohh-ln-qw2"/>
@@ -304,6 +317,7 @@
                     <connections>
                         <outlet property="addressLabel" destination="3PJ-Cn-qzm" id="s7S-HV-nxV"/>
                         <outlet property="doneButton" destination="qf6-wr-kkQ" id="UQI-k4-mHM"/>
+                        <outlet property="goButton" destination="z4E-ad-gjH" id="oBw-ZA-NY6"/>
                         <outlet property="mapPinImage" destination="QkA-iQ-oCO" id="e6o-Ep-JC2"/>
                         <outlet property="mapView" destination="CRL-HW-At4" id="HF0-xY-yhz"/>
                     </connections>
@@ -490,6 +504,7 @@
     </scenes>
     <resources>
         <image name="AZ" width="25" height="24"/>
+        <image name="GetDirection" width="50" height="50"/>
         <image name="Location" width="128" height="128"/>
         <image name="Photo" width="195" height="196"/>
         <image name="Pin" width="42" height="42"/>
