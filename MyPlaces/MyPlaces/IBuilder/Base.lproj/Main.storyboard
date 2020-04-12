@@ -10,7 +10,7 @@
         <!--New Place-->
         <scene sceneID="CAD-Gb-MnC">
             <objects>
-                <tableViewController modalPresentationStyle="fullScreen" id="JZG-Ue-AFy" customClass="NewPlaceViewController" customModule="MyPlaces" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="JZG-Ue-AFy" customClass="NewPlaceViewController" customModule="MyPlaces" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bhh-bv-blJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -516,6 +516,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="AYm-vi-2eZ"/>
-        <segue reference="1b8-ej-ykF"/>
+        <segue reference="VbO-Cy-nBu"/>
     </inferredMetricsTieBreakers>
 </document>
