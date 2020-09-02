@@ -50,7 +50,6 @@ class MapViewController: UIViewController {
         
         addressLabel.text = ""
         setupMapView()
-        setupMapView()
     }
     
     //MARK: - IBActions
